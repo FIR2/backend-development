@@ -25,7 +25,9 @@ app.get('/login',(req,res) => {
 app.get('/jsondata', (req,res) => {
     res.json(data)
 })
-
+app.get('/portfolio',(req,res) => {
+  res.send("this is portfolio website")
+})
 app.listen(process.env.port, () => {
   console.log(`Example app listening on port ${port}`)
 })
